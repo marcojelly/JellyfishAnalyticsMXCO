@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "926183651809",
+    "project_id": "sys-39971410882834603801392017",
+    "storage_bucket": "sys-39971410882834603801392017.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926183651809:android:d29d7e9ac9802b32e37aa0",
+        "android_client_info": {
+          "package_name": "com.example.jellyfishanalyticsmxco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926183651809-0rla2j7uf7d6ipiimhajjm0qj54j1rm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSTm6usoAgoNIm5PUTlArrfAx4YkLv5TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926183651809-0rla2j7uf7d6ipiimhajjm0qj54j1rm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926183651809:android:215770b27127ad93e37aa0",
+        "android_client_info": {
+          "package_name": "com.example.marcormzjellyfish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926183651809-0rla2j7uf7d6ipiimhajjm0qj54j1rm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSTm6usoAgoNIm5PUTlArrfAx4YkLv5TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926183651809-0rla2j7uf7d6ipiimhajjm0qj54j1rm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
