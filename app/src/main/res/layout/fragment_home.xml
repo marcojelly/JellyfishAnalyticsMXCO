@@ -1,198 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B1B1B"
-    tools:context=".ui.home.HomeFragment">
+    android:fillViewport="true">
 
-    <Button
-        android:id="@+id/sendAddToCartBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="add_to_cart"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendViewCartBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendViewItemBtn" />
-
-    <Button
-        android:id="@+id/sendViewCartBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="view_cart"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendBeginCheckoutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendAddToCartBtn" />
-
-    <Button
-        android:id="@+id/sendBeginCheckoutBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="begin_checkout"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendAddShippingInfoBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendViewCartBtn" />
-
-    <Button
-        android:id="@+id/sendAddShippingInfoBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="add_shipping_info"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendAddPaymentInfoBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendBeginCheckoutBtn" />
-
-    <Button
-        android:id="@+id/sendAddPaymentInfoBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="add_payment_info"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/ecommerceTitle2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendAddShippingInfoBtn" />
-
-    <Button
-        android:id="@+id/sendPurchaseBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="79dp"
-        android:backgroundTint="#CABB04"
-        android:text="purchase"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purchaseID" />
-
-    <Button
-        android:id="@+id/sendViewItemBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="99dp"
-        android:backgroundTint="#CABB04"
-        android:text="view_item"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendAddToCartBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendSelectItemBtn" />
-
-    <Button
-        android:id="@+id/sendViewItemListBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="99dp"
-        android:backgroundTint="#CABB04"
-        android:text="view_item_list"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendSelectItemBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/sendSelectItemBtn"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="99dp"
-        android:backgroundTint="#CABB04"
-        android:text="select_item"
-        android:textAllCaps="false"
-        android:textColor="#262626"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/sendViewItemBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendViewItemListBtn" />
-
-    <EditText
-        android:id="@+id/purchaseID"
-        android:layout_width="254dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="78dp"
-        android:background="#E7E7E7"
-        android:ems="10"
-        android:inputType="text"
-        android:text="T12345"
-        android:textAlignment="center"
-        android:textColor="#2C2B2B"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/sendPurchaseBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ecommerceTitle2" />
-
-    <TextView
-        android:id="@+id/ecommerceTitle2"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="91dp"
-        android:text="Set Transaction ID"
-        android:textColor="#CABB04"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/purchaseID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendAddPaymentInfoBtn" />
+        android:background="#1B1B1B"
+        tools:context=".ui.home.HomeFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/sendAddToCartBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="add_to_cart"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendViewItemBtn" />
+
+        <Button
+            android:id="@+id/sendViewCartBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="view_cart"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendAddToCartBtn" />
+
+        <Button
+            android:id="@+id/sendBeginCheckoutBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="begin_checkout"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendViewCartBtn" />
+
+        <Button
+            android:id="@+id/sendAddShippingInfoBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="add_shipping_info"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendBeginCheckoutBtn" />
+
+        <Button
+            android:id="@+id/sendAddPaymentInfoBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="add_payment_info"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendAddShippingInfoBtn" />
+
+        <Button
+            android:id="@+id/sendViewItemBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="99dp"
+            android:backgroundTint="#F8B133"
+            android:text="view_item"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendSelectItemBtn" />
+
+        <Button
+            android:id="@+id/sendViewItemListBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="view_item_list"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/sendSelectItemBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="99dp"
+            android:backgroundTint="#F8B133"
+            android:text="select_item"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendViewItemListBtn" />
+
+        <EditText
+            android:id="@+id/purchaseID"
+            android:layout_width="254dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="78dp"
+            android:background="#E7E7E7"
+            android:ems="10"
+            android:inputType="text"
+            android:text="T12345"
+            android:textAlignment="center"
+            android:textColor="#2C2B2B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerceTitle2" />
+
+        <TextView
+            android:id="@+id/ecommerceTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="91dp"
+            android:text="Set Transaction ID"
+            android:textColor="#F8B133"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendAddPaymentInfoBtn" />
+
+        <Button
+            android:id="@+id/sendPurchaseBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#F8B133"
+            android:text="purchase"
+            android:textAllCaps="false"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/purchaseID" />
+
+        <Button
+            android:id="@+id/dummieBtn"
+            android:layout_width="253dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="79dp"
+            android:backgroundTint="#1B1B1B"
+            android:text="purchase"
+            android:textAllCaps="false"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendPurchaseBtn" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="139dp"
+            android:layout_marginEnd="139dp"
+            android:src="@drawable/jellyfishlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
